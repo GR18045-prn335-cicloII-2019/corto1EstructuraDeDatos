@@ -18,12 +18,12 @@ int main() {
         }
     }
     //se ingresa la posicion que desea borrar
-    printf("ingrese la posicion que desea borrar: ");
+    printf("ingrese la posicion que desea borrar: \n");
     printf("ingrese la fila");
     scanf("%d",&fila);
     printf("ingrese la columna");
     scanf("%d",&columna);
-    if(fila>0 && columna>0 && fila<=filas && columna<=columnas){
+    if(fila>=0 && columna>=0 && fila<=filas && columna<=columnas){
         matriz[fila][columna]=0;
     }
     //imprimimos la matriz
